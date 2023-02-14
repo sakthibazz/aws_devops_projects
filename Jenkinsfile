@@ -16,7 +16,7 @@ pipeline
         {
             
             steps {
-                git 'https://github.com/sakthibazz1/javaproject.git'
+                git 'https://github.com/sakthibazz1/aws_devops_projects.git'
                   }
          }
             stage("Maven Builds")
