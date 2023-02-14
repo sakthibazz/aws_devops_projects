@@ -19,7 +19,7 @@ pipeline
             {
             steps {              
                 sh "mvn validate"
-                sh "mvn clean"
+                sh "mvn clean package"
                 sh "mvn compile"
                 sh "mvn install"
                 sh "mv target/*.war target/chumma.war"
