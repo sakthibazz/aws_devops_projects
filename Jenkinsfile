@@ -7,8 +7,14 @@ pipeline
 
     stages
     {
+        stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM'])
+            }
+        }
         stage("Git Clone") 
         {
+            
             steps {
                 git 'https://github.com/sakthibazz1/javaproject.git'
                   }
