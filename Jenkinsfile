@@ -30,8 +30,8 @@ pipeline
                     {   
                     sh """
                     scp -o StrictHostKeyChecking=no target/chumma.war ec2-user@172.31.48.113:/usr/local/apache-tomcat-8.5.85/webapps/
-                    ssh ec2-user@172.31.48.113:/usr/local/apache-tomcat-8.5.85/bin/shutdown.sh
-                    ssh ec2-user@172.31.48.113:/usr/local/apache-tomcat-8.5.85/bin/startup.sh
+                    ssh ec2-user@172.31.48.113 /usr/local/apache-tomcat-8.5.85/bin/shutdown.sh
+                    ssh ec2-user@172.31.48.113 /usr/local/apache-tomcat-8.5.85/bin/startup.sh
                     """
                 
                     }
