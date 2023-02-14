@@ -7,11 +7,7 @@ pipeline
 
     stages
     {
-        stage('Checkout') {
-            steps {
-                checkout([$class: 'GitSCM'])
-            }
-        }
+       
         stage("Git Clone") 
         {
             
